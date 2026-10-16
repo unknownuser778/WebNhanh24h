@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebNhanh 24h | Build Website Dưới 3 Ngày - Có Bảo Hành - Từ 800K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* -------------------------------------------------------------
+       HỆ THỐNG GIAO DIỆN: WEBNHANH 24H
+       Phong cách tối giản, công nghệ cao cấp lấy cảm hứng từ Apple Store & Nike
+       Tối ưu 100% tiếng Việt không lỗi font - Chuyển động Compositor mượt mà
+       ------------------------------------------------------------- */
+    :root {
+      --bg-dark: #07080a;
+      --bg-card: #111317;
+      --bg-card-hover: #181a20;
+      --text-white: #f8f9fa;
+      --text-muted: #8e95a2;
+      --text-subtle: #575e6d;
+
+      --accent-lightning: #ffb800;
+      --accent-lightning-glow: rgba(255, 184, 0, 0.25);
+      --accent-cyan: #00e5ff;
+      --accent-cyan-glow: rgba(0, 229, 255, 0.2);
+      --accent-green: #00e676;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 255, 255, 0.24);
+
+      /* Đổ bóng đa tầng cao cấp */
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 12px 28px -4px rgba(0, 0, 0, 0.6), 0 4px 10px rgba(0, 0, 0, 0.4);
+      --shadow-elevated: 0 24px 50px -10px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 229, 255, 0.1);
+
+      --ease-silk: cubic-bezier(0.16, 1, 0.3, 1);
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --radius-pill: 9999px;
+
+      color-scheme: dark;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.65;
+      background: radial-gradient(circle at 50% -10%, #151a24 0%, #07080a 55%);
+      word-break: normal;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* -------------------------------------------------------------
+       TOP BANNER VÀNG RỰC RỠ: 3 TỪ KHÓA BẮT BUỘC
+       ------------------------------------------------------------- */
+    .top-hook-banner {
+      background: linear-gradient(90deg, #ffb800 0%, #ff8800 50%, #ff3b30 100%);
+      color: #000000;
+      padding: 12px 24px;
+      font-size: 0.85rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(255, 184, 0, 0.3);
+      position: relative;
+      z-index: 101;
+    }
+
+    .banner-keywords {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .keyword-badge {
+      background: #000000;
+      color: #ffb800;
+      padding: 3px 12px;
+      border-radius: var(--radius-pill);
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .keyword-badge.highlight {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* -------------------------------------------------------------
+       HEADER KÍNH MỜ APPLE STYLE
+       ------------------------------------------------------------- */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 8, 10, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-zap {
+      width: 36px;
+      height: 36px;
+      background: var(--accent-lightning);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 0 16px var(--accent-lightning-glow);
+    }
+
+    .logo-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-name span {
+      color: var(--accent-cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .btn-nav-cta {
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      background: #ffffff;
+      color: #000000;
+      font-size: 0.85rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-silk);
+    }
+
+    .btn-nav-cta:hover {
+      background: var(--accent-cyan);
+      box-shadow: 0 4px 20px var(--accent-cyan-glow);
+      transform: translateY(-2px);
+    }
+
+    /* -------------------------------------------------------------
+       HERO IMPACT: SỨC HÚT THỊ GIÁC ĐẦU TRANG
+       ------------------------------------------------------------- */
+    .hero-section {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 70px 32px 90px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .hero-pill-badge {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 184, 0, 0.1);
+      border: 1px solid rgba(255, 184, 0, 0.25);
+      color: var(--accent-lightning);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4.6vw, 4.2rem);
+      line-height: 1.12;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title span.grad {
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      max-width: 540px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    .btn-main-action {
+      padding: 16px 36px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-cyan);
+      color: #000000;
+      font-size: 1rem;
+      font-weight: 900;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 30px -6px var(--accent-cyan-glow);
+      transition: all 0.3s var(--ease-silk);
+    }
+
+    .btn-main-action:hover {
+      background: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px -4px rgba(255, 255, 255, 0.3);
+    }
+
+    .price-chip {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+    }
+
+    .price-chip strong {
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+
+    /* Mô hình điện thoại preview (Apple Style Visual Stage) */
+    .mockup-stage {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone-frame {
+      width: 100%;
+      max-width: 380px;
+      background: #15181e;
+      border: 3px solid rgba(255, 255, 255, 0.15);
+      border-radius: 44px;
+      padding: 18px;
+      box-shadow: 0 35px 80px -15px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 229, 255, 0.12);
+      position: relative;
+      transition: transform 0.6s var(--ease-silk);
+    }
+
+    .phone-frame:hover {
+      transform: translateY(-8px) rotate(1deg);
+    }
+
+    .phone-screen {
+      background: #0d0f13;
+      border-radius: 32px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .screen-header-bar {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .avatar-mini {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-lightning));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .screen-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-preview-mini {
+      background: #171a21;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .float-card-pill {
+      position: absolute;
+      background: rgba(17, 19, 23, 0.95);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-hover);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .pill-left {
+      bottom: 40px;
+      left: -20px;
+      color: var(--accent-green);
+    }
+
+    .pill-right {
+      top: 40px;
+      right: -20px;
+      color: var(--accent-lightning);
+    }
+
+    /* -------------------------------------------------------------
+       VÌ SAO CHỌN GIAO DIỆN BÊN MÌNH (3 CỘT APPLE STYLE)
+       ------------------------------------------------------------- */
+    .why-section {
+      background: #0b0c10;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 100px 32px;
+    }
+
+    .section-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+    }
+
+    .section-header-center {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 60px;
+    }
+
+    .sub-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-headline {
+      font-size: clamp(2rem, 3.4vw, 2.9rem);
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .why-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      transition: transform 0.4s var(--ease-silk), border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-md);
+    }
+
+    .icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .icon-brand { background: rgba(0, 229, 255, 0.12); color: var(--accent-cyan); }
+    .icon-typo { background: rgba(255, 184, 0, 0.12); color: var(--accent-lightning); }
+    .icon-speed { background: rgba(0, 230, 118, 0.12); color: var(--accent-green); }
+
+    .why-card h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .why-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* -------------------------------------------------------------
+       BẢNG GIÁ & CAM KẾT RÕ RÀNG
+       ------------------------------------------------------------- */
+    .commitments-section {
+      max-width: 1360px;
+      margin: 100px auto;
+      padding: 0 32px;
+    }
+
+    .pricing-commit-card {
+      background: linear-gradient(145deg, #12151c 0%, #0d0f14 100%);
+      border: 1px solid var(--border-hover);
+      border-radius: var(--radius-lg);
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 60px;
+      box-shadow: var(--shadow-elevated);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-commit-card::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 184, 0, 0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .pricing-box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .price-big-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.4rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .price-big-number span {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+
+    .commit-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .commit-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .commit-check {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(0, 230, 118, 0.15);
+      color: var(--accent-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .commit-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .commit-desc {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* -------------------------------------------------------------
+       PORTFOLIO DEMO SHOWCASE
+       ------------------------------------------------------------- */
+    .demos-section {
+      background: #0b0c10;
+      border-top: 1px solid var(--border-subtle);
+      padding: 100px 32px;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 50px;
+    }
+
+    .demo-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.4s var(--ease-silk), border-color 0.4s ease;
+    }
+
+    .demo-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-hover);
+    }
+
+    .demo-img-box {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .demo-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-silk);
+    }
+
+    .demo-card:hover .demo-img-box img {
+      transform: scale(1.06);
+    }
+
+    .demo-info {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .demo-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-cyan);
+    }
+
+    .demo-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .demo-link-btn {
+      margin-top: 10px;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.25s ease;
+    }
+
+    .demo-card:hover .demo-link-btn {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* -------------------------------------------------------------
+       FOOTER
+       ------------------------------------------------------------- */
+    .site-footer {
+      background: #07080a;
+      border-top: 1px solid var(--border-subtle);
+      padding: 60px 32px;
+      text-align: center;
+      color: var(--text-subtle);
+      font-size: 0.875rem;
+    }
+
+    /* -------------------------------------------------------------
+       COMPOSITOR-ONLY SMOOTH ANIMATIONS
+       modern-web-guidance: motion & scroll-entry-exit-effects
+       ------------------------------------------------------------- */
+    .fade-smooth {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s var(--ease-silk), transform 0.8s var(--ease-silk);
+      will-change: opacity, transform;
+    }
+
+    .fade-smooth.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @supports ((animation-timeline: view()) and (animation-range: entry)) {
+        @keyframes scrollSmoothFade {
+          from { opacity: 0; transform: translateY(35px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .scroll-trigger {
+          animation: scrollSmoothFade auto var(--ease-silk) both;
+          animation-timeline: view();
+          animation-range: entry 10% entry 40%;
+        }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-smooth {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .scroll-trigger {
+        animation: none !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-section {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+      }
+      .mockup-stage {
+        margin-top: 20px;
+      }
+      .why-grid, .demo-grid {
+        grid-template-columns: 1fr;
+      }
+      .pricing-commit-card {
+        grid-template-columns: 1fr;
+        padding: 40px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links {
+        display: none;
+      }
+      .banner-keywords {
+        font-size: 0.775rem;
+      }
+      .float-card-pill {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BANNER 3 TỪ KHÓA BẮT BUỘC -->
+  <aside class="top-hook-banner" aria-label="Cam kết dịch vụ">
+    <div class="banner-keywords">
+      <span>⚡</span>
+      <span class="keyword-badge">BUILD WEBSITE</span>
+      <span>•</span>
+      <span class="keyword-badge highlight">DƯỚI 3 NGÀY</span>
+      <span>•</span>
+      <span class="keyword-badge">CÓ BẢO HÀNH</span>
+      <span>⚡ (GIÁ KHỞI ĐIỂM CHỈ TỪ 800K — ĐẸP CHUẨN GU)</span>
+    </div>
+  </aside>
+
+  <!-- THANH ĐIỀU HƯỚNG KÍNH MỜ -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a href="#" class="brand-logo" aria-label="WebNhanh 24h Trang Chủ">
+        <div class="logo-zap">⚡</div>
+        <div class="logo-name">WebNhanh<span>24h</span></div>
+      </a>
+
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-links">
+          <li><a href="#why">Vì Sao Chọn Chúng Tôi</a></li>
+          <li><a href="#pricing">Chi Phí &amp; Bảo Hành</a></li>
+          <li><a href="#demos">Mẫu Demo Thực Tế</a></li>
+          <li><a href="#contact">Liên Hệ 24/7</a></li>
+        </ul>
+      </nav>
+
+      <a href="#pricing" class="btn-nav-cta">
+        Nhận Báo Giá 800K
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-content fade-smooth">
+        <div class="hero-pill-badge">
+          <span>⚡</span> WebNhanh 24h &bull; Digital Business Card Siêu Tốc
+        </div>
+
+        <h1 class="hero-title">
+          Biến link mạng xã hội &amp; số điện thoại thành <span class="grad">website di động mượt mà.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Giải pháp website thu nhỏ &amp; danh thiếp số chuyên nghiệp dành cho cá nhân và cửa hàng nhỏ tại Việt Nam. Khách hàng mua hàng bằng mắt trước khi bằng ví — một giao diện hài hòa chuẩn gu sẽ nâng tầm giá trị sản phẩm của bạn lên gấp 3 lần!
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#pricing" class="btn-main-action">
+            Tư Vấn Ngay ⚡
+          </a>
+          <div class="price-chip">
+            Giá khởi điểm từ <strong>800.000đ</strong><br>
+            Bàn giao thường chỉ trong <strong>24h</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISUAL PHONE FRAME DEMO -->
+      <div class="mockup-stage fade-smooth">
+        <div class="float-card-pill pill-right">
+          <span>⚡</span> Xong Thường Trong 24 Giờ
+        </div>
+
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="screen-header-bar">
+              <div class="avatar-mini">💼</div>
+              <div>
+                <div style="font-size: 0.9rem; font-weight: 800; color: #fff;">YourBrand Store</div>
+                <div style="font-size: 0.725rem; color: #00e5ff;">verified.webnhanh24h.vn</div>
+              </div>
+            </div>
+
+            <div class="screen-body">
+              <div class="card-preview-mini">
+                <span>☕</span> Quán Cafe &bull; Đặt Bàn / Xem Menu
+              </div>
+              <div class="card-preview-mini">
+                <span>👟</span> Sneaker &bull; Xem Đôi Deadstock
+              </div>
+              <div class="card-preview-mini">
+                <span>🧸</span> Gấu Bông &bull; Nhắn Tin Zalo Mua
+              </div>
+              <div class="card-preview-mini" style="background: rgba(0, 229, 255, 0.1); border-color: rgba(0, 229, 255, 0.3); color: #00e5ff;">
+                <span>📞</span> Gọi Trực Tiếp &bull; 09xx.xxx.xxx
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-card-pill pill-left">
+          <span>🛡️</span> Bảo Hành &amp; Sửa Lỗi Miễn Phí
+        </div>
+      </div>
+    </section>
+
+    <!-- VÌ SAO BẠN NÊN CHỌN GIAO DIỆN BÊN MÌNH? -->
+    <section id="why" class="why-section">
+      <div class="section-inner">
+        <div class="section-header-center fade-smooth">
+          <span class="sub-tag">Chuẩn Mực Thiết Kế</span>
+          <h2 class="section-headline">Vì Sao Bạn Nên Chọn Giao Diện Bên Mình?</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem;">
+            Đừng để trang bán hàng của bạn trông như một bản mẫu dựng sẵn nhạt nhòa. Chúng tôi tạo nên sự khác biệt từ chi tiết nhỏ nhất.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Cột 1 -->
+          <article class="why-card fade-smooth scroll-trigger">
+            <div class="icon-box icon-brand">✨</div>
+            <h3>Thiết Kế Chuẩn Visual Brand</h3>
+            <p>
+              Bố cục lấy cảm hứng từ các ông lớn như Apple, Nike, Adidas – đề cao sự tinh giản, hiện đại, màu sắc hài hòa và hiệu ứng cuộn trang mượt mà không giật lag.
+            </p>
+          </article>
+
+          <!-- Cột 2 -->
+          <article class="why-card fade-smooth scroll-trigger">
+            <div class="icon-box icon-typo">🔤</div>
+            <h3>Tối Ưu Hiển Thị Tuyệt Đối</h3>
+            <p>
+              Không lỗi font tiếng Việt dù dùng bất kỳ ký tự có dấu nào. Chuẩn responsive tự động thích ứng hoàn hảo từ màn hình điện thoại, tablet đến máy tính.
+            </p>
+          </article>
+
+          <!-- Cột 3 -->
+          <article class="why-card fade-smooth scroll-trigger">
+            <div class="icon-box icon-speed">⚡</div>
+            <h3>Nhẹ, Nhanh &amp; Giữ Chân Khách</h3>
+            <p>
+              Tối ưu tốc độ tải trang chỉ trong tích tắc, tập trung giữ chân khách hàng ngay từ 3 giây đầu tiên lướt web nhờ mã nguồn HTML/CSS tối giản, hiệu quả cao.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI PHÍ & CAM KẾT RÕ RÀNG -->
+    <section id="pricing" class="commitments-section">
+      <div class="pricing-commit-card fade-smooth">
+        <div class="pricing-box">
+          <span class="hero-pill-badge">Báo Giá Trọn Gói</span>
+          <div class="price-big-number">800.000đ <span>/ trang</span></div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65;">
+            Đã bao gồm toàn bộ mã nguồn website hoàn chỉnh, tối ưu thiết kế riêng theo màu sắc thương hiệu của bạn (chưa gồm tên miền/hosting).
+          </p>
+          <a href="#contact" class="btn-main-action" style="margin-top: 10px; width: fit-content;">
+            Bắt Đầu Dự Án Ngay ⚡
+          </a>
+        </div>
+
+        <div class="commit-list">
+          <!-- Cam kết 1 -->
+          <div class="commit-item">
+            <div class="commit-check">✓</div>
+            <div>
+              <div class="commit-title">Tiến Độ Bàn Giao Siêu Tốc</div>
+              <div class="commit-desc">
+                Cam kết hoàn thành dưới 3 ngày. Thông thường chỉ trong vòng 24 giờ là bạn đã có trang web xem trước để duyệt và góp ý trực tiếp.
+              </div>
+            </div>
+          </div>
+
+          <!-- Cam kết 2 -->
+          <div class="commit-item">
+            <div class="commit-check">✓</div>
+            <div>
+              <div class="commit-title">Bàn Giao &amp; Hướng Dẫn Sử Dụng A - Z</div>
+              <div class="commit-desc">
+                Bàn giao đầy đủ file mã nguồn sạch đẹp, hướng dẫn bạn chi tiết cách cập nhật thông tin, thay số điện thoại và liên kết mạng xã hội dễ dàng.
+              </div>
+            </div>
+          </div>
+
+          <!-- Cam kết 3 -->
+          <div class="commit-item">
+            <div class="commit-check">✓</div>
+            <div>
+              <div class="commit-title">Bảo Hành &amp; Maintainance Miễn Phí</div>
+              <div class="commit-desc">
+                Hỗ trợ bảo trì kỹ thuật và chỉnh sửa miễn phí nếu phát sinh bất kỳ lỗi hiển thị, vỡ khung hay lỗi chuyển động nào trong quá trình bạn sử dụng.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MẪU DEMO THỰC TẾ -->
+    <section id="demos" class="demos-section">
+      <div class="section-inner">
+        <div class="section-header-center fade-smooth">
+          <span class="sub-tag">Kho Giao Diện Mẫu</span>
+          <h2 class="section-headline">Những Sản Phẩm Thực Tế Chúng Tôi Đã Dựng</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem;">
+            Bạn có thể mở và tương tác trực tiếp với các mẫu giao diện này ngay trong bộ Portfolio.
+          </p>
+        </div>
+
+        <div class="demo-grid">
+          <!-- Demo 1 -->
+          <article class="demo-card fade-smooth scroll-trigger">
+            <div class="demo-img-box">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" alt="Quán cà phê Kōhī Atelier">
+            </div>
+            <div class="demo-info">
+              <span class="demo-tag">Quán Cafe &bull; Roastery</span>
+              <h3 class="demo-title">Kōhī Atelier</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted);">
+                Phong cách Bắc Âu &amp; Nhật Bản tĩnh lặng, tông màu ấm áp lanh và gốm mộc mạc.
+              </p>
+              <a href="coffee.html" class="demo-link-btn">Xem Bản Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Demo 2 -->
+          <article class="demo-card fade-smooth scroll-trigger">
+            <div class="demo-img-box">
+              <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800&auto=format&fit=crop" alt="Vault 01 Sneaker">
+            </div>
+            <div class="demo-info">
+              <span class="demo-tag">Sneaker &bull; Streetwear</span>
+              <h3 class="demo-title">Vault 01</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted);">
+                Năng lượng đồ hoạ tương phản cao phong cách Nike và thẻ kiểm định NFC chuẩn Apple.
+              </p>
+              <a href="sneakers.html" class="demo-link-btn">Xem Bản Demo ↗</a>
+            </div>
+          </article>
+
+          <!-- Demo 3 -->
+          <article class="demo-card fade-smooth scroll-trigger">
+            <div class="demo-img-box">
+              <img src="https://images.unsplash.com/photo-1559454403-b8fb88521f11?q=80&w=800&auto=format&fit=crop" alt="Mochikiss Gấu Bông">
+            </div>
+            <div class="demo-info">
+              <span class="demo-tag">Gấu Bông &bull; Quà Tặng</span>
+              <h3 class="demo-title">Mochikiss</h3>
+              <p style="font-size: 0.88rem; color: var(--text-muted);">
+                Cảm giác xúc giác êm ái, tông màu pastel kẹo ngọt kiểu Miniso và hộp mù Pop Mart.
+              </p>
+              <a href="plushies.html" class="demo-link-btn">Xem Bản Demo ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CHÂN TRANG & THÔNG TIN LIÊN HỆ -->
+  <footer id="contact" class="site-footer">
+    <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; align-items: center;">
+      <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff;">WebNhanh 24h &bull; Sẵn Sàng Đồng Hành Cùng Bạn</div>
+      <p style="color: var(--text-muted);">
+        Inbox trực tiếp để được tư vấn thiết kế và giữ slot nhận website ngay trong 24 giờ.
+      </p>
+      <div style="margin-top: 10px; font-size: 0.8rem; color: var(--text-subtle);">
+        &copy; 2026 WebNhanh 24h. Xây dựng bằng chuẩn mực Web hiện đại &bull; Tối ưu hiệu suất Compositor GPU.
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT HIỆU ỨNG CUỘN MƯỢT (CHỈ PHỤC VỤ CHUYỂN ĐỘNG, KHÔNG LOGIC NGHIỆP VỤ NÚT) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.fade-smooth');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      animatedElements.forEach((el) => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
