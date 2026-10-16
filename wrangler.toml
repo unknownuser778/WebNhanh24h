@@ -1,5 +1,3 @@
 name = "webnhanh24h"
 compatibility_date = "2026-10-16"
-
-[pages_build_output_dir]
-dir = "."
+pages_build_output_dir = "."
